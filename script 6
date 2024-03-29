@@ -1,0 +1,6 @@
+#!/bin/bash
+disc_memory=`df -h . | awk -F " " 'NR==2 {print $5}' | sed  s/%//g`
+if [ $disc_memory -gt 35 ]
+then
+        echo "memory reach the threshhold value" | mail -s "disc_usage" 999kowshi@gmail.com
+fi
