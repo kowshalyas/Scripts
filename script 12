@@ -1,0 +1,25 @@
+#!/bin/bash
+echo "enter the value"
+read num1
+num2=$num2
+product=1
+while [ $num1 -gt 0 ]
+do
+product=`expr $product \* num1`
+num1=`expe $num1 - 1`
+done
+echo "the factirial value $num2 is $product"
+
+
+#!/bin/bash
+echo "enter the value for n"
+read num
+m=$num
+sum=0
+while [ $num -gt 0 ]
+do
+sum=`expr $sum + $num`
+num=`expr $num - 1`
+done
+echo "the sum of n $m is $n num"
+ 
