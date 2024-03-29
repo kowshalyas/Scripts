@@ -1,0 +1,28 @@
+day=`date '+%a'
+case $day in
+"mon")
+      mkdir -p temp
+      ;;
+"tue")
+      touch temp/day1.text
+      ;;
+"wed")
+     echo "content" >> temp/day1.txt
+"thu")
+     cp temp/day1.txt day1.txt_bck
+     ;;
+"fri")
+     rm -rf temp/day1.text
+     ;;
+"sat" | "sun"
+    echo "holiday"
+    ;;
+esac
+
+
+
+
+
+
+
+
