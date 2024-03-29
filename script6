@@ -1,0 +1,11 @@
+n=5
+for ((i=1; i<=5; i++))
+do
+echo "$i"
+done
+
+n=i
+for ((i=n; i>=5; i--))
+do
+echo "$i"
+done
