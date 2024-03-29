@@ -1,0 +1,10 @@
+echo "enter the path of the file"
+read file
+ln=0
+lwc=0
+while read file
+do
+ln=`expr $ln + 1`
+lwc=`$ (echo "$line" | wc -w )
+echo "line $ln : $lwc no of words"
+done < $file
