@@ -1,0 +1,9 @@
+service="jenkins sshd"
+for i in $service
+do
+ ps -C $i
+if [ $? -ne 0 ]
+then
+echo "service not running" | mail -s "service status" 999kowshi@gmail.com
+fi
+done
