@@ -1,0 +1,9 @@
+data=" "
+while -r read line
+do
+empname=$(echo "$line" | cut -d " " -f2 )
+if [ $age -gt 40 ]
+then
+echo "empname"
+fi
+done <<< $data
